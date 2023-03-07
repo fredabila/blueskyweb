@@ -1,0 +1,43 @@
+.container {
+  height: calc(100dvh - var(--header-height));
+  width: 100%;
+  overflow: auto;
+}
+
+.inner {
+  width: 100%;
+  position: relative;
+}
+
+.row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.post {
+  padding: 0.75rem;
+}
+
+.spinner {
+  margin-block-start: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.noMore {
+  margin-block: 1rem;
+  font-size: var(--cmm-font-size-sm);
+  color: var(--cmm-color-font-muted);
+  text-align: center;
+}
+
+.newItemBtn {
+  position: fixed;
+  top: 0.75rem;
+  left: 50%;
+  translate: -50%;
+  z-index: 60;
+  min-width: 9rem;
+}
