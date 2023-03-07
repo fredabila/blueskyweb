@@ -120,8 +120,8 @@ function ProfileRoute() {
                   }
                 >
                   {hoverUnfollow || isLoadingFollow
-                    ? "フォロー解除"
-                    : "フォロー中"}
+                    ? "unfollow"
+                    : "following"}
                 </Button>
               ) : (
                 <Button
@@ -132,12 +132,12 @@ function ProfileRoute() {
                     isLoadingFollow ? <Spinner size="sm" /> : undefined
                   }
                 >
-                  フォローする
+                 Follow
                 </Button>
               ))}
             <span id={UNFOLLOW_DESCRIBE_ID} className="visually-hidden">
-              クリックして{profile.displayName ?? profile.handle}
-              さんのフォローを解除
+             click{profile.displayName ?? profile.handle}
+              unfollow
             </span>
           </div>
         </div>
@@ -148,7 +148,7 @@ function ProfileRoute() {
               <span className={styles.handle}>@{profile.handle}</span>
               {profile.viewer?.followedBy && (
                 <Tag size="sm" variant="soft" colorScheme="neutral">
-                  フォローされています
+                 Follows you
                 </Tag>
               )}
             </div>
