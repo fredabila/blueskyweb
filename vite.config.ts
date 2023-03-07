@@ -18,8 +18,8 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png"],
       manifest: {
-        name: "Flat",
-        short_name: "Flat",
+        name: "Blurp",
+        short_name: "Blurp",
         description: "A Bluesky client",
         theme_color: "#ffffff",
         icons: [
