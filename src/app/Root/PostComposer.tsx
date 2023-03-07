@@ -65,7 +65,7 @@ export default function PostComposer({ profile }: Props) {
       <Dialog
         open={open}
         setOpen={setOpen}
-        title="いまなにしてる？"
+        title="New Post"
         className={styles.dialog}
       >
         <div className={styles.container}>
@@ -85,7 +85,7 @@ export default function PostComposer({ profile }: Props) {
           <div className={styles.action}>
             <p className={styles.keybinding}>
               <kbd>{modKeyLabel}+Enter</kbd>
-              <span>で投稿</span>
+              <span>shortcut</span>
             </p>
             <div className={styles.postBtnWrap}>
               <Button
@@ -94,7 +94,7 @@ export default function PostComposer({ profile }: Props) {
                 size="md"
                 startDecorator={isLoading ? <Spinner size="sm" /> : undefined}
               >
-                つぶやく
+                Publish
               </Button>
             </div>
           </div>
