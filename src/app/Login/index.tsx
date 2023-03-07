@@ -65,10 +65,10 @@ function LoginRoute() {
             state === "submitting" ? <Spinner size="sm" /> : undefined
           }
         >
-          ログイン
+          Login
         </Button>
         <small className={styles.notice}>
-          Flatはまだ開発中です。セキュリティなどに不安を覚える人はログインしないでください。
+         This is a product made from the original bluesky client
         </small>
       </Form>
     </div>
